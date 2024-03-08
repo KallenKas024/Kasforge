@@ -12,10 +12,17 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false,
+      "all": true,
       "shell": {
         "all": false,
         "open": true
+      },
+      "fs": {
+        "all": true,
+        "scope": ["*", "$DOWNLOAD/*"]
+      },
+      "window": {
+        "all": true
       }
     },
     "bundle": {
@@ -36,10 +43,14 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
+        "resizable": false,
         "title": "Kasforge",
-        "width": 800,
-        "height": 600
+        "transparent": true,
+        "decorations": false,
+        "fileDropEnabled": false,
+        "maximizable": false,
+        "width": 850,
+        "height": 525
       }
     ]
   }

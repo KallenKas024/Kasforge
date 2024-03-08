@@ -1,6 +1,7 @@
 import { invoke } from "@tauri-apps/api"
 import { listen } from "@tauri-apps/api/event"
 import { useState } from "react"
+import Home from "./Home/Home"
 function Index() {
   const [num, setNum] = useState(0)
 
@@ -16,12 +17,7 @@ function Index() {
     setNum(prev => prev += 1)
   }
   return <>
-    <div>
-      <a>null</a>
-      <div>{num}</div>
-      <button onClick={add}>Add</button>
-      <button onClick={listOfExeDir}>click</button>
-    </div>
+    <Home></Home>
   </>
 }
 

@@ -4,8 +4,6 @@ import { useState } from "react"
 import Home from "./Home/Home"
 function Index() {
   const [num, setNum] = useState(0)
-
-  invoke("stats_backend")
   const listOfExeDir = async () => {
     await invoke("sync")
     await listen("sync", (event) => {

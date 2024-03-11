@@ -1,8 +1,11 @@
 
+import { invoke } from "@tauri-apps/api";
 import "./App.css";
 import Index from "./module/index";
-function App() {
 
+invoke("stats_backend")
+
+function App() {
   return (
     <Index />
   )

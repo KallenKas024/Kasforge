@@ -19,7 +19,7 @@
       },
       "fs": {
         "all": true,
-        "scope": ["*", "$DOWNLOAD/*"]
+        "scope": ["*"]
       },
       "window": {
         "all": true
